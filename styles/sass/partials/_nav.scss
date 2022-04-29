@@ -1,0 +1,23 @@
+header{
+    background-image: url(../assets/home-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+        max-width: 100%;
+    }
+    ul{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 20px;
+    }
+    a:focus{
+        color: green;
+        border: none;
+    }
+}

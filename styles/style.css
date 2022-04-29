@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* site fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -155,4 +157,115 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+}
+
+/* text styles */
+/* color styles */
+h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 46px;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+a {
+  color: black;
+}
+
+li {
+  font-family: "Raleway", sans-serif;
+}
+
+/*====== GLOBAL STYLES ====== */
+html {
+  font-size: 125%;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.wrapper {
+  max-width: 1260px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  padding: 10px 10px;
+}
+
+hr {
+  width: 6px;
+  height: 3px;
+  color: lightgreen;
+  background-color: limegreen;
+}
+
+header {
+  background-image: url(../assets/home-1.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+  max-width: 100%;
+}
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 20px;
+}
+header a:focus {
+  color: green;
+  border: none;
+}
+
+/* main here you will find content for all of the homepage styles */
+.popular {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.popular .saladText .saladImg {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+.popular .saladText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-right: 100px;
+  padding-right: 50px;
+  width: 50%;
 }

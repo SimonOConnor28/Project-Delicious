@@ -1,0 +1,18 @@
+/* main here you will find content for all of the homepage styles */
+.popular {
+    display: flex;
+
+    .saladText .saladImg {
+        flex-basis: 50%;
+    }
+    .saladText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 100px;
+        padding-right: 50px;
+        width: 50%;
+    }
+
+}
