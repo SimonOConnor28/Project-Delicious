@@ -1,0 +1,9 @@
+# list of all files i want to hide
+
+.vscode
+
+
+.DS_Store
+
+
+designs/
