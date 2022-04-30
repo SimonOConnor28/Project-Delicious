@@ -169,6 +169,15 @@ h1 {
   margin: 0;
 }
 
+h2 {
+  text-transform: uppercase;
+}
+
+h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
 a {
   color: black;
 }
@@ -177,13 +186,26 @@ li {
   font-family: "Raleway", sans-serif;
 }
 
+p {
+  font-family: "Lora", serif;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
 /*====== GLOBAL STYLES ====== */
 html {
   font-size: 125%;
 }
 
+.wrapper {
+  max-width: 1400px;
+  width: 90%;
+  margin: 0 auto;
+}
+
 img {
-  max-width: 100%;
+  width: 100%;
   display: block;
   height: auto;
 }
@@ -194,22 +216,20 @@ ul {
   list-style-type: none;
 }
 
-.wrapper {
-  max-width: 1260px;
-  width: 90%;
-  margin: 0 auto;
-}
-
 a {
   text-decoration: none;
   padding: 10px 10px;
 }
 
 hr {
-  width: 6px;
+  width: 60px;
   height: 3px;
   color: lightgreen;
   background-color: limegreen;
+}
+
+.widthFifty {
+  width: 40%;
 }
 
 header {
@@ -233,9 +253,6 @@ header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   padding-top: 20px;
 }
 header a:focus {
@@ -249,9 +266,10 @@ header a:focus {
   display: -ms-flexbox;
   display: flex;
 }
-.popular .saladText .saladImg {
+.popular .saladText, .popular .saladImg {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  width: 50%;
 }
 .popular .saladText {
   display: -webkit-box;
@@ -265,7 +283,85 @@ header a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  margin-right: 100px;
-  padding-right: 50px;
+}
+
+.menuContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #999999;
+}
+.menuContainer .tacoImg, .menuContainer .menuText {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
   width: 50%;
+}
+.menuContainer .menuText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+.menuContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.fancy {
+  padding-top: 150px;
+}
+.fancy .parentBox {
+  position: relative;
+  width: 50%;
+  margin: 0 auto;
+}
+.fancy .parentBox .box2 {
+  position: absolute;
+  width: 150px;
+  top: -85px;
+  right: -56px;
+}
+
+.rest {
+  text-align: center;
+  padding-bottom: 150px;
+}
+.rest p {
+  padding: 0 200px;
+}
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.clients {
+  padding: 50px 0;
+  background-color: #fcffa4;
+}
+.clients h2 {
+  text-align: center;
+}
+.clients .clientsText {
+  width: 59%;
+  text-align: center;
+  margin-left: 301px;
 }

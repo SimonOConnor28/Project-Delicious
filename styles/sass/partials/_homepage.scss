@@ -1,18 +1,81 @@
 /* main here you will find content for all of the homepage styles */
-.popular {
+.popular{
     display: flex;
-
-    .saladText .saladImg {
+    .saladText, .saladImg {
         flex-basis: 50%;
+        width: 50%;
     }
     .saladText {
         display: flex;
         flex-direction: column;
         justify-content: center;
         text-align: center;
-        margin-right: 100px;
-        padding-right: 50px;
+    }
+}
+
+
+.menuContainer {
+    display: flex;
+    background-color: $brown;
+    .tacoImg, .menuText{
+        flex-basis: 50%;
         width: 50%;
     }
+    .menuText{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
 
+
+.fancy {
+    padding-top: 150px;
+    .parentBox {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+        .box2 {
+            position: absolute;
+            width: 150px;
+            top: -85px;
+            right: -56px;
+            }
+            }
+        }
+
+
+.rest {
+    text-align: center;
+    padding-bottom: 150px;
+    p{
+        padding: 0 200px;
+    }
+}
+
+.gallery {
+    ul {
+        display: flex;
+    }
+}
+
+
+.clients {
+    padding: 50px 0;
+    background-color: #fcffa4;
+    h2 {
+        text-align: center;
+    }
+    .clientsText{
+        width: 59%;
+        text-align: center;
+        margin-left: 301px;
+        }
 }

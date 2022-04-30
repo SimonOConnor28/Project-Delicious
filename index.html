@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delicious Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
@@ -20,27 +23,126 @@
                     <li><a href="#">Nutrition</a></li>
                     <li><a href="#">Shop</a></li>
                     <li><a href="#">Contact</a></li>
-                    <i class="fa-thin fa-badge"></i>
+                    <li class=><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 </ul><!-- STILL NEED TO ADD SHOP AND SEARCH SVG use font awesome-->
             </nav> <!--END OF NAV BAR-->
         </div> <!--END OF WRAPPER-->
     </header>
 
     <main>
-        <section class="popular wrapper">
+        <section class="popular">
                 <div class="saladText">
-                    <h2>Most Popular Recipes</h2>
-                    <hr>
-                    <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie
-                    turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean
-                    earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
+                    <div class="wrapper">
+                        <h2>Most Popular Recipes</h2>
+                        <hr>
+                        <p>Nori grape silver beet broccoli kombu beet greens fava bean potato quandong celery. Bunya nuts black-eyed pea prairie
+                        turnip leek lentil turnip greens parsnip. Sea lettuce lettuce water chestnut eggplant winter purslane fennel azuki bean
+                        earthnut pea sierra leone bologi leek soko chicory celtuce parsley jÃ­cama salsify.</p>
+                    </div>
                     <!-- <button>View Recipes</button> -->
                 </div>
 
                 <div class="saladImg">
-                    <img src="./assets/home-2.jpeg" alt="Bowl of lettuce">
+                <img src="./assets/home-2.jpeg" alt="Bowl of lettuce">
                 </div>
         </section>
+
+        <section class="menuContainer">
+            
+            <div class="tacoImg">
+                <img src="./assets/home-3.jpeg" alt="">
+            </div>
+
+            <div class="menuText">
+                <div class="wrapper">
+                    <ul>
+
+                        <li class="widthFifty">
+                            <i class="fa-solid fa-lemon"></i>
+                            <h3>Vegetarin</h3>
+                            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p>
+                        </li>
+
+                        <li class="widthFifty"> 
+                            <h3>appetizers</h3>
+                            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
+                            azuki bean garlic.</p>
+                        </li>
+
+                        <li class="widthFifty">
+                            <h3>deserts</h3>
+                            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
+                            azuki bean garlic.</p>
+                        </li>
+
+                        <li class="widthFifty">
+                            <h3>drinks</h3>
+                            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
+                            azuki bean garlic.</p>
+                        </li>
+
+                        <li class="widthFifty">
+                            <h3>Salads</h3>
+                            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
+                            azuki bean garlic.</p>
+                        </li>
+
+                        <li class="widthFifty">
+                            <h3>Side Dishes</h3>
+                            <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon
+                            azuki bean garlic.</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="fancy wrapper">
+                <div class="parentBox">
+                    <img class="box1" src="./assets/home-4.jpeg" alt="">
+                    <img class="box2" src="./assets/home-circle-text.png" alt="">
+                </div>
+
+                <div class="rest">
+                    <h2>Our Restaurtants</h2>
+                    <hr>
+                    <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens
+                    dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+                </div>
+        </section>
+
+        <section>   <!-- THIS IS THE GALLERY OF 6 IMGS-->
+            <div class="gallery">
+                <ul>
+                    <li><img src="./assets/home-5.jpeg" alt=""></li>
+                    <li><img src="./assets/home-6.jpeg" alt=""></li>
+                    <li><img src=".//assets/home-7.jpeg" alt=""></li>
+                </ul>
+                </div>
+                <div class="gallery">
+                <ul>   
+                    <li><img src="./assets/home-8.jpeg" alt=""></li>
+                    <li><img src="./assets/home-9.jpeg" alt=""></li>
+                    <li><img src="./assets/home-10.jpeg" alt=""></li>
+                </ul>
+                </div>
+        </section>
+
+        <section class="clients">
+            <div class="wrapper">
+                <h2>Hungry Clients</h2>
+                <hr>
+                <p class="clientsText">
+                    Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea
+                    tatsoi aubergine spring onion bush tomato kale radicchio turnip chicory salsify pea sprouts fava bean. Dandelion
+                    zucchini burdock yarrow chickpea dandelion sorrel courgette turnip greens tigernut soybean radish artichoke wattle seed
+                    endive groundnut broccoli arugula.
+                </p>
+            </div>
+        </section>
+
     </main>
     
 </body>
