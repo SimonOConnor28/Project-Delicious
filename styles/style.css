@@ -178,6 +178,16 @@ h3 {
   font-size: 1rem;
 }
 
+h4 {
+  color: green;
+  text-transform: uppercase;
+}
+
+h5 {
+  text-transform: uppercase;
+  color: #F6F6F6;
+}
+
 a {
   color: black;
 }
@@ -199,7 +209,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1500px;
   width: 90%;
   margin: 0 auto;
 }
@@ -355,7 +365,6 @@ header a:focus {
 
 .clients {
   padding: 50px 0;
-  background-color: #fcffa4;
 }
 .clients h2 {
   text-align: center;
@@ -364,4 +373,27 @@ header a:focus {
   width: 59%;
   text-align: center;
   margin-left: 301px;
+}
+
+.topFooter {
+  background-color: #2E2E2E;
+}
+.topFooter .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-preferred-size: 33.3333333333%;
+      flex-basis: 33.3333333333%;
+}
+.topFooter .wrapper p {
+  color: white;
+}
+.topFooter .fBox1 {
+  width: 35%;
 }

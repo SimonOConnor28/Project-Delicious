@@ -1,0 +1,15 @@
+.topFooter{
+    background-color: $greyBlack;
+    .wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-basis: calc(100% / 3);
+            p {
+                color: white;
+            }
+    }
+    .fBox1 {
+        width: 35%;
+    }
+}
