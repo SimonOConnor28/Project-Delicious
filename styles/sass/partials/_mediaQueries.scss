@@ -1,0 +1,83 @@
+@media (max-width:320px) {
+    header {
+        padding-top: 220px;
+        background-size: cover;
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }  
+}
+
+@media (max-width:320px) {
+    .popular {
+        display: flex;
+        flex-direction: column-reverse;
+        .saladImg {
+            width: 100%;
+        }
+        .saladText {
+            width: 100%;
+        }
+    }
+}
+
+
+
+
+@media (max-width:320px) {
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+        .tacoImg {
+            width: 100%;
+        }
+        .menuText {
+            width: 100%;
+            ul {
+                display: flex;
+                flex-direction: column;
+            }
+            li {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
+
+@media (max-width:320px) {
+    .fancy{
+        width: 100%;
+        padding-top: 3px;
+        .parentBox {
+            width: 100%;
+            margin: 0;
+            .box1 {
+                width: 100%;
+                margin: 0 auto;
+            }
+            .box2 {
+                width: 97px;
+                top: 0px;
+                right: 99px;
+            }
+        }
+    }
+    .box1 {
+        width: 320px;
+    }
+}
+@media (max-width:320px) {
+    .rest {
+        p {
+        width: 100%;
+        padding: 0;
+        }
+    }
+}

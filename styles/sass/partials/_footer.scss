@@ -1,5 +1,5 @@
 .topFooter{
-    background-color: $greyBlack;
+    background-color: $primary;
     .wrapper{
         display: flex;
         flex-direction: row;
@@ -10,6 +10,13 @@
             }
     }
     .fBox1 {
-        width: 35%;
+        width: 25%;
+    }
+    .fBox2 {
+        width: 25%;
+    }
+    .fBox3 {
+        width: 25%;
     }
 }
+

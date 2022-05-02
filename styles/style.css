@@ -175,11 +175,10 @@ h2 {
 
 h3 {
   text-transform: uppercase;
-  font-size: 1rem;
+  font-size: 1.125rem;
 }
 
 h4 {
-  color: green;
   text-transform: uppercase;
 }
 
@@ -201,6 +200,20 @@ p {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.3px;
+  color: #2E2E2E;
+}
+
+footer p {
+  font-family: "Lora", serif;
+  font-size: 13px;
+  color: #2E2E2E;
+  border-bottom: 1px solid #999999;
+}
+footer h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  color: green;
+  font-size: 28px;
 }
 
 /*====== GLOBAL STYLES ====== */
@@ -209,7 +222,7 @@ html {
 }
 
 .wrapper {
-  max-width: 1500px;
+  max-width: 1400px;
   width: 90%;
   margin: 0 auto;
 }
@@ -234,6 +247,7 @@ a {
 hr {
   width: 60px;
   height: 3px;
+  margin: 0 auto;
   color: lightgreen;
   background-color: limegreen;
 }
@@ -317,7 +331,7 @@ header a:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: center;
+  color: #2E2E2E;
 }
 .menuContainer ul {
   display: -webkit-box;
@@ -361,6 +375,7 @@ header a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .clients {
@@ -372,7 +387,8 @@ header a:focus {
 .clients .clientsText {
   width: 59%;
   text-align: center;
-  margin-left: 301px;
+  margin: 0 auto;
+  color: #999999;
 }
 
 .topFooter {
@@ -395,5 +411,111 @@ header a:focus {
   color: white;
 }
 .topFooter .fBox1 {
-  width: 35%;
+  width: 25%;
+}
+.topFooter .fBox2 {
+  width: 25%;
+}
+.topFooter .fBox3 {
+  width: 25%;
+}
+
+@media (max-width: 320px) {
+  header {
+    padding-top: 220px;
+    background-size: cover;
+  }
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .popular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .popular .saladImg {
+    width: 100%;
+  }
+  .popular .saladText {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .menuContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuContainer .tacoImg {
+    width: 100%;
+  }
+  .menuContainer .menuText {
+    width: 100%;
+  }
+  .menuContainer .menuText ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuContainer .menuText li {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .fancy {
+    width: 100%;
+    padding-top: 3px;
+  }
+  .fancy .parentBox {
+    width: 100%;
+    margin: 0;
+  }
+  .fancy .parentBox .box1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fancy .parentBox .box2 {
+    width: 97px;
+    top: 0px;
+    right: 99px;
+  }
+
+  .box1 {
+    width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .rest p {
+    width: 100%;
+    padding: 0;
+  }
 }
