@@ -1,5 +1,7 @@
 @charset "UTF-8";
 /* site fonts */
+/* text styles */
+/* color styles */
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
@@ -159,8 +161,6 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-/* text styles */
-/* color styles */
 h1 {
   font-family: "Raleway", sans-serif;
   font-size: 46px;
@@ -203,16 +203,16 @@ p {
   color: #2E2E2E;
 }
 
-footer p {
+.topFooter p {
   font-family: "Lora", serif;
   font-size: 13px;
   color: #2E2E2E;
   border-bottom: 1px solid #999999;
 }
-footer h4 {
+.topFooter h4 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  color: green;
+  color: #66b032;
   font-size: 28px;
 }
 
@@ -248,12 +248,23 @@ hr {
   width: 60px;
   height: 3px;
   margin: 0 auto;
-  color: lightgreen;
-  background-color: limegreen;
+  color: yellowgreen;
+  background-color: yellowgreen;
 }
 
 .widthFifty {
   width: 40%;
+}
+
+button {
+  padding: 10px;
+  background-color: yellowgreen;
+  color: white;
+}
+
+input {
+  padding: 10px;
+  border-radius: 0;
 }
 
 header {
@@ -307,6 +318,9 @@ header a:focus {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+.popular p {
+  padding-top: 20px;
 }
 
 .menuContainer {
@@ -368,7 +382,7 @@ header a:focus {
   padding-bottom: 150px;
 }
 .rest p {
-  padding: 0 200px;
+  padding: 10px 200px;
 }
 
 .gallery ul {
@@ -379,7 +393,8 @@ header a:focus {
 }
 
 .clients {
-  padding: 50px 0;
+  padding: 50px 0 200px 0;
+  background-color: #e8f48c;
 }
 .clients h2 {
   text-align: center;
@@ -390,9 +405,12 @@ header a:focus {
   margin: 0 auto;
   color: #999999;
 }
+.clients p {
+  padding-top: 40px;
+}
 
 .topFooter {
-  background-color: #2E2E2E;
+  background-color: #333333;
 }
 .topFooter .wrapper {
   display: -webkit-box;
@@ -415,14 +433,51 @@ header a:focus {
 }
 .topFooter .fBox2 {
   width: 25%;
+  padding-top: 18px;
 }
 .topFooter .fBox3 {
   width: 25%;
+  padding-top: 18px;
+}
+.topFooter .fBox3 p {
+  border-bottom: none;
+}
+.topFooter .fBox3 div {
+  border-bottom: 1px solid;
+  padding-bottom: 20px;
+  color: #999999;
+}
+.topFooter .arrow {
+  background-color: #66b032;
+  padding: 12px 11px;
+  color: white;
+}
+
+.socials {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: white;
+}
+.socials li {
+  padding-right: 20px;
+  padding-top: 10px;
+}
+
+.bottomFooter {
+  background-color: #2E2E2E;
+  margin: 0;
+  padding-left: 50px;
+}
+.bottomFooter p {
+  margin: 0;
+  color: white;
 }
 
 @media (max-width: 320px) {
   header {
-    padding-top: 220px;
+    padding-top: 9px;
     background-size: cover;
   }
   header .wrapper {
@@ -442,6 +497,13 @@ header a:focus {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0;
+  }
+  header .wrapper ul li {
+    padding-bottom: 20px;
+  }
+  header .wrapper a {
+    padding-bottom: 20px;
   }
 }
 @media (max-width: 320px) {
@@ -453,6 +515,7 @@ header a:focus {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    padding-bottom: 25px;
   }
   .popular .saladImg {
     width: 100%;
@@ -506,7 +569,7 @@ header a:focus {
   .fancy .parentBox .box2 {
     width: 97px;
     top: 0px;
-    right: 99px;
+    right: 108px;
   }
 
   .box1 {
@@ -514,8 +577,259 @@ header a:focus {
   }
 }
 @media (max-width: 320px) {
+  .rest {
+    padding-bottom: 25px;
+  }
   .rest p {
     width: 100%;
     padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .clients {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .clients .clientsText {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .topFooter .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topFooter .fBox1 {
+    width: 100%;
+  }
+  .topFooter .fBox2 {
+    width: 100%;
+  }
+  .topFooter .fBox3 {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .bottomFooter {
+    padding: 0;
+    text-align: center;
+  }
+}
+/* landscape phones and down */
+/* HEADER STYLES */
+@media (max-width: 480px) {
+  header {
+    padding-top: 9px;
+    background-size: cover;
+  }
+  header .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header .wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  header .wrapper ul li {
+    padding-bottom: 10px;
+  }
+  header .wrapper a {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .popular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 25px;
+  }
+  .popular .saladImg {
+    width: 100%;
+  }
+  .popular .saladText {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .menuContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuContainer .tacoImg {
+    width: 100%;
+  }
+  .menuContainer .menuText {
+    width: 100%;
+  }
+  .menuContainer .menuText ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuContainer .menuText li {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .fancy {
+    width: 100%;
+    padding-top: 3px;
+  }
+  .fancy .parentBox {
+    width: 100%;
+    margin: 0;
+  }
+  .fancy .parentBox .box1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fancy .parentBox .box2 {
+    width: 97px;
+    top: 0px;
+    right: 194px;
+  }
+
+  .box1 {
+    width: 320px;
+  }
+}
+@media (max-width: 480px) {
+  .rest {
+    padding-bottom: 25px;
+  }
+  .rest p {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  .clients {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .clients .clientsText {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .topFooter .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topFooter .fBox1 {
+    width: 100%;
+  }
+  .topFooter .fBox2 {
+    width: 100%;
+  }
+  .topFooter .fBox3 {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .bottomFooter {
+    padding: 0;
+    text-align: center;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header {
+    padding-top: 280px;
+  }
+
+  .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .wrapper ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .wrapper ul li {
+    padding-bottom: 10px;
+  }
+  .wrapper a {
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .popular img {
+    height: 380px;
+  }
+}
+@media (max-width: 768px) {
+  .menuContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuContainer .tacoImg {
+    width: 100%;
+  }
+  .menuContainer .menuText {
+    width: 100%;
+  }
+  .menuContainer .menuText ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .menuContainer .menuText li {
+    width: 100%;
   }
 }

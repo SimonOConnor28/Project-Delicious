@@ -1,6 +1,6 @@
 @media (max-width:320px) {
     header {
-        padding-top: 220px;
+        padding-top: 9px;
         background-size: cover;
         .wrapper {
             display: flex;
@@ -8,6 +8,13 @@
             ul {
                 display: flex;
                 flex-direction: column;
+                padding: 0;
+                li {
+                    padding-bottom: 20px;
+                }
+            }
+            a {
+                padding-bottom: 20px;
             }
         }
     }  
@@ -17,6 +24,7 @@
     .popular {
         display: flex;
         flex-direction: column-reverse;
+        padding-bottom: 25px;
         .saladImg {
             width: 100%;
         }
@@ -65,7 +73,7 @@
             .box2 {
                 width: 97px;
                 top: 0px;
-                right: 99px;
+                right: 108px;
             }
         }
     }
@@ -73,11 +81,269 @@
         width: 320px;
     }
 }
+
+
 @media (max-width:320px) {
     .rest {
+        padding-bottom: 25px;
         p {
         width: 100%;
         padding: 0;
         }
     }
 }
+
+
+
+@media (max-width:320px) {
+    .clients {
+        padding-top: 30px;
+        padding-bottom: 50px;
+        .clientsText{
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width:320px) {
+    .topFooter {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .fBox1 {
+            width: 100%;
+        }
+        .fBox2 {
+            width: 100%;
+        }
+        .fBox3 {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .bottomFooter {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+
+
+/* landscape phones and down */
+
+
+/* HEADER STYLES */
+@media (max-width:480px) {
+    header {
+        padding-top: 9px;
+        background-size: cover;
+    
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+    
+            ul {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+    
+                li {
+                    padding-bottom: 10px;
+                }
+            }
+    
+            a {
+                padding-bottom: 20px;
+            }
+        }
+    }
+    }
+
+    @media (max-width:480px) {
+
+        .popular {
+            display: flex;
+            flex-direction: column-reverse;
+            padding-bottom: 25px;
+        
+            .saladImg {
+                width: 100%;
+            }
+        
+            .saladText {
+                width: 100%;
+            }
+        }
+        }
+
+
+        @media (max-width:480px) {
+            .menuContainer {
+                display: flex;
+                flex-direction: column;
+            
+                .tacoImg {
+                    width: 100%;
+                }
+            
+                .menuText {
+                    width: 100%;
+            
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                    }
+            
+                    li {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        @media (max-width:480px) {
+    .fancy {
+        width: 100%;
+        padding-top: 3px;
+    
+        .parentBox {
+            width: 100%;
+            margin: 0;
+    
+            .box1 {
+                width: 100%;
+                margin: 0 auto;
+            }
+    
+            .box2 {
+                width: 97px;
+                top: 0px;
+                right: 194px;
+            }
+        }
+    }
+    
+    .box1 {
+        width: 320px;
+    }
+        }
+
+
+        @media (max-width:480px) {
+                .rest {
+                    padding-bottom: 25px;
+                
+                    p {
+                        width: 100%;
+                        padding: 0;
+                    }
+                }
+        }
+
+
+        @media (max-width:480px) {
+            .clients {
+                padding-top: 30px;
+                padding-bottom: 50px;
+            
+                .clientsText {
+                    width: 100%;
+                }
+            }
+        }
+
+
+        @media (max-width:480px) {
+            .topFooter {
+                .wrapper {
+                    display: flex;
+                    flex-direction: column;
+                }
+            
+                .fBox1 {
+                    width: 100%;
+                }
+            
+                .fBox2 {
+                    width: 100%;
+                }
+            
+                .fBox3 {
+                    width: 100%;
+                }
+            }
+        }
+
+
+
+        @media (max-width:480px) {
+            .bottomFooter {
+                padding: 0;
+                text-align: center;
+            }
+        }
+
+
+
+        /* Landscape phone to portrait tablet */
+
+        @media (max-width: 768px) {
+            header {
+                padding-top: 280px;
+            }
+                    .wrapper {
+                        display: flex;
+                        flex-direction: column;
+                    
+                        ul {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 0;
+                    
+                            li {
+                                padding-bottom: 10px;
+                            }
+                        }
+                    
+                        a {
+                            padding-bottom: 20px;
+                        }
+                    }
+                    }
+
+                    @media (max-width:768px) {
+                        .popular{
+                            img {
+                                height: 380px;
+                            }
+                        }
+                        
+                    }
+
+                    @media (max-width:768px) {
+                                    .menuContainer {
+                                        display: flex;
+                                        flex-direction: column;
+                                    
+                                        .tacoImg {
+                                            width: 100%;
+                                        }
+                                    
+                                        .menuText {
+                                            width: 100%;
+                                    
+                                            ul {
+                                                display: flex;
+                                                flex-direction: column;
+                                            }
+                                    
+                                            li {
+                                                width: 100%;
+                                            }
+                                        }
+                                    }
+                                }

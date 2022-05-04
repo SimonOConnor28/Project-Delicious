@@ -30,11 +30,22 @@ hr {
     width: 60px;
     height: 3px;
     margin: 0 auto;
-    color: lightgreen;
-    background-color: limegreen;
+    color: yellowgreen;
+    background-color: yellowgreen;
 }
 
 
 .widthFifty {
     width: 40%;
+}
+
+button {
+    padding: 10px;
+    background-color: yellowgreen;
+    color: white;
+}
+
+input {
+    padding: 10px;
+    border-radius: 0;
 }

@@ -1,5 +1,5 @@
 .topFooter{
-    background-color: $primary;
+    background-color: $black;
     .wrapper{
         display: flex;
         flex-direction: row;
@@ -14,9 +14,44 @@
     }
     .fBox2 {
         width: 25%;
+        padding-top: 18px;
     }
     .fBox3 {
         width: 25%;
+        padding-top: 18px;
+        p {
+            border-bottom: none;
+        }
+        div {
+            border-bottom: 1px solid;
+            padding-bottom: 20px;
+            color: $brown;
+        }
+    }
+    .arrow {
+        background-color: #66b032;
+        padding: 12px 11px;
+        color: white;
     }
 }
 
+.socials {
+    padding-top: 20px;
+    display: flex;
+    li {
+        padding-right: 20px;
+        padding-top: 10px;
+    }
+    color: white;
+}
+
+
+.bottomFooter {
+    background-color: $primary;
+    margin: 0;
+    padding-left: 50px;
+    p {
+        margin: 0;
+        color: white;
+    }
+}
