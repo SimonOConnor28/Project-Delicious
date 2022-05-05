@@ -7,6 +7,7 @@
         flex-basis: calc(100% / 3);
             p {
                 color: white;
+                padding-bottom: 20px;
             }
     }
     .fBox1 {
@@ -26,6 +27,7 @@
             border-bottom: 1px solid;
             padding-bottom: 20px;
             color: $brown;
+            
         }
     }
     .arrow {

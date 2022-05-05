@@ -1,0 +1,18 @@
+header {
+    background-image:url(../assets/contact-1.jpeg);
+    min-height: 100vh;
+}   
+
+
+.contactContainer {
+    display: flex;
+    .form {
+        width: 60%;
+        .info {
+            width: 40%;
+        }
+    }
+    .infoP{
+        width: 400px;
+    }
+}

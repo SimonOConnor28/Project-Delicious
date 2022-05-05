@@ -409,6 +409,26 @@ header a:focus {
   padding-top: 40px;
 }
 
+header {
+  background-image: url(../assets/contact-1.jpeg);
+  min-height: 100vh;
+}
+
+.contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactContainer .form {
+  width: 60%;
+}
+.contactContainer .form .info {
+  width: 40%;
+}
+.contactContainer .infoP {
+  width: 400px;
+}
+
 .topFooter {
   background-color: #333333;
 }
@@ -427,6 +447,7 @@ header a:focus {
 }
 .topFooter .wrapper p {
   color: white;
+  padding-bottom: 20px;
 }
 .topFooter .fBox1 {
   width: 25%;
@@ -475,12 +496,29 @@ header a:focus {
   color: white;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 940px) {
   header {
-    padding-top: 9px;
-    background-size: cover;
+    min-height: 56vh;
   }
-  header .wrapper {
+}
+@media (max-width: 940px) {
+  .fBox3 i {
+    padding-top: 11px;
+  }
+  .fBox3 ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header {
+    padding-top: 10px;
+  }
+
+  .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -489,7 +527,7 @@ header a:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  header .wrapper ul {
+  .wrapper ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -499,14 +537,14 @@ header a:focus {
             flex-direction: column;
     padding: 0;
   }
-  header .wrapper ul li {
-    padding-bottom: 20px;
+  .wrapper ul li {
+    padding-bottom: 10px;
   }
-  header .wrapper a {
+  .wrapper a {
     padding-bottom: 20px;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .popular {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -515,7 +553,6 @@ header a:focus {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    padding-bottom: 25px;
   }
   .popular .saladImg {
     width: 100%;
@@ -523,8 +560,12 @@ header a:focus {
   .popular .saladText {
     width: 100%;
   }
+  .popular .saladText button {
+    width: 200px;
+    margin: 0 auto;
+  }
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .menuContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -553,74 +594,22 @@ header a:focus {
     width: 100%;
   }
 }
-@media (max-width: 320px) {
-  .fancy {
-    width: 100%;
-    padding-top: 3px;
+@media (max-width: 768px) {
+  .fBox3 i {
+    padding-top: 11px;
   }
-  .fancy .parentBox {
-    width: 100%;
-    margin: 0;
-  }
-  .fancy .parentBox .box1 {
-    width: 100%;
-    margin: 0 auto;
-  }
-  .fancy .parentBox .box2 {
-    width: 97px;
-    top: 0px;
-    right: 108px;
-  }
-
-  .box1 {
-    width: 320px;
-  }
-}
-@media (max-width: 320px) {
-  .rest {
-    padding-bottom: 25px;
-  }
-  .rest p {
-    width: 100%;
-    padding: 0;
-  }
-}
-@media (max-width: 320px) {
-  .clients {
-    padding-top: 30px;
-    padding-bottom: 50px;
-  }
-  .clients .clientsText {
-    width: 100%;
-  }
-}
-@media (max-width: 320px) {
-  .topFooter .wrapper {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
+  .fBox3 ul {
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .topFooter .fBox1 {
-    width: 100%;
-  }
-  .topFooter .fBox2 {
-    width: 100%;
-  }
-  .topFooter .fBox3 {
-    width: 100%;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
-@media (max-width: 320px) {
+@media (max-width: 768px) {
   .bottomFooter {
-    padding: 0;
     text-align: center;
   }
 }
-/* landscape phones and down */
 /* HEADER STYLES */
 @media (max-width: 480px) {
   header {
@@ -767,13 +756,13 @@ header a:focus {
     text-align: center;
   }
 }
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+/* mobile 320 */
+@media (max-width: 320px) {
   header {
-    padding-top: 280px;
+    padding-top: 9px;
+    background-size: cover;
   }
-
-  .wrapper {
+  header .wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -782,7 +771,7 @@ header a:focus {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .wrapper ul {
+  header .wrapper ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -792,19 +781,32 @@ header a:focus {
             flex-direction: column;
     padding: 0;
   }
-  .wrapper ul li {
-    padding-bottom: 10px;
+  header .wrapper ul li {
+    padding-bottom: 20px;
   }
-  .wrapper a {
+  header .wrapper a {
     padding-bottom: 20px;
   }
 }
-@media (max-width: 768px) {
-  .popular img {
-    height: 380px;
+@media (max-width: 320px) {
+  .popular {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 25px;
+  }
+  .popular .saladImg {
+    width: 100%;
+  }
+  .popular .saladText {
+    width: 100%;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 320px) {
   .menuContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -831,5 +833,72 @@ header a:focus {
   }
   .menuContainer .menuText li {
     width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .fancy {
+    width: 100%;
+    padding-top: 3px;
+  }
+  .fancy .parentBox {
+    width: 100%;
+    margin: 0;
+  }
+  .fancy .parentBox .box1 {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .fancy .parentBox .box2 {
+    width: 97px;
+    top: 0px;
+    right: 112px;
+  }
+
+  .box1 {
+    width: 320px;
+  }
+}
+@media (max-width: 320px) {
+  .rest {
+    padding-bottom: 25px;
+  }
+  .rest p {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media (max-width: 320px) {
+  .clients {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .clients .clientsText {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .topFooter .wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .topFooter .fBox1 {
+    width: 100%;
+  }
+  .topFooter .fBox2 {
+    width: 100%;
+  }
+  .topFooter .fBox3 {
+    width: 100%;
+  }
+}
+@media (max-width: 320px) {
+  .bottomFooter {
+    padding: 0;
+    text-align: center;
   }
 }
