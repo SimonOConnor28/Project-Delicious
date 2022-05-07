@@ -171,6 +171,7 @@ h1 {
 
 h2 {
   text-transform: uppercase;
+  font-family: "Raleway", sans-serif;
 }
 
 h3 {
@@ -214,6 +215,13 @@ p {
   font-weight: bold;
   color: #66b032;
   font-size: 28px;
+}
+
+/* CONTACT PAGE STYLE */
+.send {
+  color: green;
+  text-transform: uppercase;
+  font-size: 18px;
 }
 
 /*====== GLOBAL STYLES ====== */
@@ -289,6 +297,10 @@ header ul {
   display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
+}
+header a:hover {
+  color: green;
+  border: none;
 }
 header a:focus {
   color: green;
@@ -409,7 +421,7 @@ header a:focus {
   padding-top: 40px;
 }
 
-header {
+.contactPic {
   background-image: url(../assets/contact-1.jpeg);
   min-height: 100vh;
 }
@@ -419,14 +431,152 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
+.contactContainer input {
+  margin-bottom: 25px;
+}
 .contactContainer .form {
   width: 60%;
+  margin-top: 60px;
 }
-.contactContainer .form .info {
-  width: 40%;
+.contactContainer .form .wrapper {
+  padding-left: 200px;
 }
-.contactContainer .infoP {
+.contactContainer .form .input {
   width: 400px;
+}
+
+.messageArrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.messageArrow i {
+  padding-top: 20px;
+  padding-left: 10px;
+  color: green;
+}
+
+/* form input styles */
+input {
+  background-color: #F6F6F6;
+  border: none;
+  padding-bottom: 20px;
+}
+
+.input:first-of-type {
+  margin-right: 20px;
+}
+
+.input2 {
+  padding-right: 400px;
+}
+
+.input3 {
+  padding-bottom: 180px;
+}
+
+.info {
+  width: 40%;
+  background-color: #F6F6F6;
+}
+.info .infoP {
+  width: 400px;
+}
+.info .infoText {
+  margin-top: 85px;
+  padding-bottom: 50px;
+}
+
+.dates {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.backgroundFruit {
+  background-image: url(../assets/contact-2.jpeg);
+  background-position: center;
+  background-size: cover;
+  min-height: 70vh;
+}
+
+.blogPic {
+  background-image: url(../assets/blog-1.jpeg);
+}
+
+/* ======= main ======= */
+.pineapple .wrapper {
+  padding-bottom: 20px;
+}
+.pineapple .wrapper h2 {
+  margin-bottom: 0;
+}
+.pineapple .wrapper p {
+  margin-top: 2px;
+  padding-bottom: 10px;
+  color: #999999;
+}
+
+.tagSocials {
+  border-top: 1px solid #999999;
+  border-bottom: 1px solid #999999;
+  padding-top: 30px;
+}
+.tagSocials span {
+  color: #000;
+  text-transform: uppercase;
+  font-family: "Lora", serif;
+  font-size: 16px;
+}
+.tagSocials a {
+  font-size: 18px;
+  color: #999999;
+}
+
+.sallyContainer {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.sallyContainer .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #999999;
+  padding-bottom: 50px;
+}
+.sallyContainer .wrapper .whiteShirt {
+  width: 50%;
+  padding-right: 50px;
+}
+.sallyContainer .wrapper .sallyText {
+  background-color: #F6F6F6;
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.sallyContainer .wrapper .sally {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+.sallyContainer .wrapper p {
+  color: #999999;
+  line-height: 30px;
+}
+
+.relatedContainer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.relatedContainer ul li {
+  width: 32%;
 }
 
 .topFooter {
@@ -470,12 +620,14 @@ header {
 }
 .topFooter .arrow {
   background-color: #66b032;
-  padding: 12px 11px;
+  width: 30px;
+  padding: 10px 12px;
+  padding-bottom: 20px;
   color: white;
 }
 
 .socials {
-  padding-top: 20px;
+  padding-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -495,10 +647,26 @@ header {
   margin: 0;
   color: white;
 }
+.bottomFooter .polar {
+  color: #66b032;
+  text-transform: uppercase;
+}
 
 @media (max-width: 940px) {
   header {
     min-height: 56vh;
+  }
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header ul li {
+    padding-bottom: 10px;
   }
 }
 @media (max-width: 940px) {
@@ -512,13 +680,9 @@ header {
             flex-direction: row;
   }
 }
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
-  header {
-    padding-top: 10px;
-  }
-
-  .wrapper {
+/* ======== CONTACT PAGE QUERIES 940PX ========= */
+@media (max-width: 940px) {
+  .contactContainer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -527,7 +691,32 @@ header {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .wrapper ul {
+  .contactContainer .form {
+    width: 100%;
+  }
+  .contactContainer .form .wrapper {
+    padding-left: 0;
+  }
+  .contactContainer .info {
+    width: 100%;
+  }
+  .contactContainer .info .infoP {
+    width: 290px;
+  }
+}
+/* ===== HEADER 900PX ====== */
+@media (max-width: 900px) {
+  header {
+    min-height: 56vh;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  header {
+    padding-top: 10px;
+  }
+
+  ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -537,10 +726,11 @@ header {
             flex-direction: column;
     padding: 0;
   }
-  .wrapper ul li {
+  ul li {
     padding-bottom: 10px;
   }
-  .wrapper a {
+
+  a {
     padding-bottom: 20px;
   }
 }
@@ -608,6 +798,48 @@ header {
 @media (max-width: 768px) {
   .bottomFooter {
     text-align: center;
+  }
+}
+/* =========== CONTACT PAGE QUERIES  768px========= */
+@media (max-width: 768px) {
+  .contactContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer .form {
+    width: 100%;
+    margin-top: 0;
+  }
+  .contactContainer .form .wrapper {
+    padding-left: 0;
+    text-align: center;
+  }
+  .contactContainer .form .wrapper .input:first-of-type {
+    margin-right: 0;
+  }
+  .contactContainer .info {
+    width: 100%;
+  }
+  .contactContainer .info .infoText {
+    margin-top: 10px;
+  }
+  .contactContainer .info .infoP {
+    width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .messageArrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /* HEADER STYLES */
@@ -756,6 +988,40 @@ header {
     text-align: center;
   }
 }
+/* =========== CONTACT PAGE QUERIES FOR 480PX ============== */
+@media (max-width: 480px) {
+  .contactContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer .form {
+    width: 100%;
+    margin-top: 0;
+  }
+  .contactContainer .form .wrapper {
+    padding-left: 0;
+  }
+  .contactContainer .info {
+    width: 100%;
+  }
+  .contactContainer .info .infoText {
+    margin-top: 10px;
+  }
+  .contactContainer .info .infoP {
+    width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .backgroundFruit {
+    min-height: 50vh;
+  }
+}
+/* ========= CONTACT PAGE  350PX======== */
 /* mobile 320 */
 @media (max-width: 320px) {
   header {
@@ -900,5 +1166,34 @@ header {
   .bottomFooter {
     padding: 0;
     text-align: center;
+  }
+}
+/* CONTACT PAGE QUERIES FOR 320PX */
+@media (max-width: 320px) {
+  .contactContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactContainer .form {
+    width: 100%;
+  }
+  .contactContainer .form .wrapper {
+    padding-left: 0;
+  }
+  .contactContainer .info {
+    width: 100%;
+  }
+  .contactContainer .info .infoP {
+    width: 290px;
+  }
+}
+@media (max-width: 320px) {
+  .backgroundFruit {
+    min-height: 32vh;
   }
 }

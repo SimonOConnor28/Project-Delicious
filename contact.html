@@ -1,76 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/style.css">
 </head>
+
 <body>
-        <header>
-            <!--START OF HEADER-->
-            <nav class="navBar">
+    <header class="contactPic">
+        <!--START OF HEADER-->
+        <nav class="navBar">
+            <div class="wrapper">
+                <!--START OF WRAPPER-->
+                <h1>Delicious</h1>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Nutrition</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li class=><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                </ul><!-- STILL NEED TO ADD SHOP AND SEARCH SVG use font awesome-->
+        </nav>
+        <!--END OF NAV BAR-->
+        </div>
+        <!--END OF WRAPPER-->
+    </header>
+
+    <main>
+        <section class="contactContainer">
+
+            <div class="form">
                 <div class="wrapper">
-                    <!--START OF WRAPPER-->
-                    <h1>Delicious</h1>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Recipes</a></li>
-                        <li><a href="#">Nutrition</a></li>
-                        <li><a href="#">Shop</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li class=><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                        <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    </ul><!-- STILL NEED TO ADD SHOP AND SEARCH SVG use font awesome-->
-            </nav>
-            <!--END OF NAV BAR-->
-            </div>
-            <!--END OF WRAPPER-->
-        </header>
 
-        <main>
-            <section class="contactContainer">
-                <div class="form">
                     <h2>drop us a line</h2>
-                        <label for="name"></label>
-                        <input type="text" name="name" placeholder="Your name">
-                        <label for="email"></label>
-                        <input for="email" name="email" placeholder="Your Email"></input>
-                            <div>
-                                <label for="text"></label>
-                                <input type="text">
-                            </div>
-                            <label for="text"></label>
-                            <input type="text">
-                </div>
+                    <div>
+                    <label for="name"></label>
+                    <input type="text" name="name" placeholder="Your name" class="input">
+                        
+                    <label for="email"></label>
+                    <input for="email" name="email" placeholder="Your Email" class="input"></input>
+                    </div>
+                    <div>
+                        <label for="text"></label>
+                        <input type="text" name="subject" placeholder="Subject" class="input2">
+                    </div>
 
-                <div class="info">
-                    <h2>Contact Details</h2>
-
-                    <p class="infoP">Beetroot water spinach okra water chestnut ricebean pea catsear courgette summer purslane. Water spinach arugula pea
-                    tatsoi aubergine spring onion bush tomato kale</p>
-                    <h4>Working hours</h4>
-
-                    <p><span>mon-fri</span>:08:00am - 05:30pm</p>
-
-                    <p>Not working on Saturday and Sunday</p>
-
-                    <h4>Contact Info</h4>
-
-                    <p>A delicious restaurant</p>
+                    <div>
+                        <label for="text"></label>
+                        <input type="text" name="text" placeholder="Message" class="input2 input3">
+                    </div>
+                    <div class="messageArrow">
+                        <p class="send">Send message</p><span><i class="fa-solid fa-right-long"></i></span>
+                    </div>
                     
-                    <p>Toronto, Ontario</p>
-
-                    <p>yum@food.com</p>
-
-                    <p>+1 234 567 8910</p>
-
                 </div>
+            </div>
 
+            <div class="info">
+                <div class="wrapper">
+                    <div class="infoText">
+                        <h2>Contact Details</h2>
 
-            </section>
-        </main>
+                        <p class="infoP">Beetroot water spinach okra water chestnut ricebean pea catsear courgette
+                            summer purslane. Water spinach arugula pea
+                            tatsoi aubergine spring onion bush tomato kale</p>
+                        <h4>Working hours</h4>
+
+                        <p><span class="dates">mon - fri</span> : 08:00am - 05:30pm</p>
+
+                        <p>Not working on Saturday and Sunday</p>
+
+                        <h4>Contact Info</h4>
+
+                        <p>A delicious restaurant</p>
+
+                        <p>Toronto, Ontario</p>
+
+                        <p>yum@food.com</p>
+
+                        <p>+1 234 567 8910</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+                <section class="backgroundFruit">
+                </section>
+        <footer>
+            <div class="topFooter">
+                <div class="wrapper">
+                    <div class="fBox1">
+                        <h4>Delicious</h4>
+                        <p>Soko radicchio bunya nuts gram dulse <span>silver beet parsnip napa cabbage lotus</span> <span>root
+                                sea lettuce brussels sprout cabbage.</span></p>
+                        <p>A delicous restaurant</p>
+                        <p>Toronto, Ontario</p>
+                        <p>yum@food.com</p>
+                        <p>+1 234 567 8910</p>
+                    </div>
+        
+                    <div class="fBox2">
+                        <h5>Recent posts</h5>
+                        <p>Beetroot water spinach okra water</p>
+                        <p>Chestnut ricebean pea catsear courgette</p>
+                        <p>Summer purslane spinach arugula pea</p>
+                        <p>Tatsol aubergine spring onion bush</p>
+                        <p>Tomato kale radicchio turnip chlcory</p>
+                        <p>Salsify pea sprouts fava bean</p>
+                    </div>
+        
+                    <div class="fBox3">
+                        <h5>Subscribe Now</h5>
+                        <p>Get all of our newest recipes immediately <span>in your inbox!</span></p>
+                        <div>
+                            <label for="email"></label>
+                            <input type="email" id="email" name="email" placeholder="Enter your email"><span class="arrow"><i class="fa-solid fa-right-long"></i></span>
+                        </div>
+                        <ul class="socials">
+                            <li><i class="fa-brands fa-facebook-f"></i></li>
+                            <li><i class="fa-brands fa-twitter"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottomFooter">
+                <div class="wrapper">
+                    <p>Copyrights &copy; 2015 by <span class="polar">polar</span> All rights Reserved</p>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
+
 </html>

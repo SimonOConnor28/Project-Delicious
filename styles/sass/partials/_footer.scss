@@ -32,13 +32,15 @@
     }
     .arrow {
         background-color: #66b032;
-        padding: 12px 11px;
+        width: 30px;
+        padding: 10px 12px;
+        padding-bottom: 20px;
         color: white;
     }
 }
 
 .socials {
-    padding-top: 20px;
+    padding-top: 10px;
     display: flex;
     li {
         padding-right: 20px;
@@ -55,5 +57,9 @@
     p {
         margin: 0;
         color: white;
+    }
+    .polar {
+        color: #66b032;
+        text-transform: uppercase;
     }
 }

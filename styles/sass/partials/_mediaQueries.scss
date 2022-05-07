@@ -1,6 +1,14 @@
+
 @media (max-width:940px) {
     header {
         min-height: 56vh;
+        ul {
+            display: flex;
+            flex-direction: column;
+            li {
+                padding-bottom: 10px;
+            }
+        }
     }
 }
 
@@ -9,14 +17,53 @@
         i {
             padding-top: 11px;
         }
-    
+
         ul {
             flex-direction: row;
         }
     }
+}
+
+
+/* ======== CONTACT PAGE QUERIES 940PX ========= */
+
+@media (max-width:940px) {
+    .contactContainer {
+            display: flex;
+            flex-direction: column;
+    
+            .form {
+                width: 100%;
+    
+                .wrapper {
+                    padding-left: 0;
+    
+                    // input {
+                    //     width: 300px;
+                    // }
+                }
+            }
+    
+            .info {
+                width: 100%;
+    
+                .infoP {
+                    width: 290px;
+                }
+            }
+        }
     }
 
 
+
+
+    /* ===== HEADER 900PX ====== */ 
+
+        @media (max-width:900px) {
+            header {
+                min-height: 56vh;
+            }
+        }
 
 
 /* Landscape phone to portrait tablet */
@@ -24,11 +71,6 @@
     header {
         padding-top: 10px;
     }
-
-    .wrapper {
-        display: flex;
-        flex-direction: column;
-
         ul {
             display: flex;
             flex-direction: column;
@@ -43,25 +85,28 @@
             padding-bottom: 20px;
         }
     }
-}
+
 
 @media (max-width:768px) {
     .popular {
         display: flex;
         flex-direction: column-reverse;
+
         .saladImg {
             width: 100%;
         }
+
         .saladText {
-                width: 100%;
-                button {
-                    width: 200px;
-                    margin: 0 auto;
-                }
+            width: 100%;
+
+            button {
+                width: 200px;
+                margin: 0 auto;
             }
         }
     }
-    
+}
+
 
 
 @media (max-width:768px) {
@@ -93,101 +138,155 @@
         i {
             padding-top: 11px;
         }
+
         ul {
             flex-direction: row;
         }
-        }
-    } 
-
-    @media (max-width:768px) {
-        .bottomFooter {
-            text-align: center;
-        }
     }
+}
+
+@media (max-width:768px) {
+    .bottomFooter {
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
+
+
+/* =========== CONTACT PAGE QUERIES  768px========= */
+@media (max-width:768px) {
+    .contactContainer {
+            display: flex;
+            flex-direction: column;
+            .form {
+                width: 100%;
+                margin-top: 0;
+                .wrapper {
+                    padding-left: 0;
+                    text-align: center;
+                    // input {
+                    //     width: 450px;
+                    // }
+                    .input:first-of-type {
+                    margin-right: 0;
+                    }
+                }
+            }
+            .info {
+                width: 100%;
+                .infoText {
+                    margin-top: 10px;
+                }
+                .infoP {
+                    width: 300px;
+                }
+            }
+        }
+}
+
+@media (max-width:768px) {
+    .messageArrow {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+
+
+
+
+
 
 /* HEADER STYLES */
 @media (max-width:480px) {
     header {
         padding-top: 9px;
         background-size: cover;
-    
+
         .wrapper {
             display: flex;
             flex-direction: column;
-    
+
             ul {
                 display: flex;
                 flex-direction: column;
                 padding: 0;
-    
+
                 li {
                     padding-bottom: 10px;
                 }
             }
-    
+
             a {
                 padding-bottom: 20px;
             }
         }
     }
+}
+
+@media (max-width:480px) {
+
+    .popular {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-bottom: 25px;
+
+        .saladImg {
+            width: 100%;
+        }
+
+        .saladText {
+            width: 100%;
+        }
     }
+}
 
-    @media (max-width:480px) {
 
-        .popular {
-            display: flex;
-            flex-direction: column-reverse;
-            padding-bottom: 25px;
-        
-            .saladImg {
-                width: 100%;
-            }
-        
-            .saladText {
-                width: 100%;
-            }
-        }
+@media (max-width:480px) {
+    .menuContainer {
+        display: flex;
+        flex-direction: column;
+
+        .tacoImg {
+            width: 100%;
         }
 
+        .menuText {
+            width: 100%;
 
-        @media (max-width:480px) {
-            .menuContainer {
+            ul {
                 display: flex;
                 flex-direction: column;
-            
-                .tacoImg {
-                    width: 100%;
-                }
-            
-                .menuText {
-                    width: 100%;
-            
-                    ul {
-                        display: flex;
-                        flex-direction: column;
-                    }
-            
-                    li {
-                        width: 100%;
-                    }
-                }
+            }
+
+            li {
+                width: 100%;
             }
         }
+    }
+}
 
-        @media (max-width:480px) {
+@media (max-width:480px) {
     .fancy {
         width: 100%;
         padding-top: 3px;
-    
+
         .parentBox {
             width: 100%;
             margin: 0;
-    
+
             .box1 {
                 width: 100%;
                 margin: 0 auto;
             }
-    
+
             .box2 {
                 width: 97px;
                 top: 0px;
@@ -195,70 +294,125 @@
             }
         }
     }
-    
+
     .box1 {
         width: 320px;
     }
+}
+
+
+@media (max-width:480px) {
+    .rest {
+        padding-bottom: 25px;
+
+        p {
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+
+@media (max-width:480px) {
+    .clients {
+        padding-top: 30px;
+        padding-bottom: 50px;
+
+        .clientsText {
+            width: 100%;
+        }
+    }
+}
+
+
+@media (max-width:480px) {
+    .topFooter {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
         }
 
-
-        @media (max-width:480px) {
-                .rest {
-                    padding-bottom: 25px;
-                
-                    p {
-                        width: 100%;
-                        padding: 0;
-                    }
-                }
+        .fBox1 {
+            width: 100%;
         }
 
+        .fBox2 {
+            width: 100%;
+        }
 
-        @media (max-width:480px) {
-            .clients {
-                padding-top: 30px;
-                padding-bottom: 50px;
-            
-                .clientsText {
-                    width: 100%;
-                }
+        .fBox3 {
+            width: 100%;
+        }
+    }
+}
+
+
+
+@media (max-width:480px) {
+    .bottomFooter {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* =========== CONTACT PAGE QUERIES FOR 480PX ============== */
+
+@media (max-width:480px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+
+        .form {
+            width: 100%;
+            margin-top: 0;
+
+            .wrapper {
+                padding-left: 0;
+
+                // input {
+                //     width: 370px;
+                // }
             }
         }
 
+        .info {
+            width: 100%;
 
-        @media (max-width:480px) {
-            .topFooter {
-                .wrapper {
-                    display: flex;
-                    flex-direction: column;
-                }
-            
-                .fBox1 {
-                    width: 100%;
-                }
-            
-                .fBox2 {
-                    width: 100%;
-                }
-            
-                .fBox3 {
-                    width: 100%;
-                }
+            .infoText {
+                margin-top: 10px;
+            }
+
+            .infoP {
+                width: 300px;
             }
         }
+    }
+}
+
+@media (max-width:480px) {
+    .backgroundFruit {
+        min-height: 50vh;
+    }
+}
 
 
 
-        @media (max-width:480px) {
-            .bottomFooter {
-                padding: 0;
-                text-align: center;
-            }
-        }
 
+/* ========= CONTACT PAGE  350PX======== */
 
+// @media (max-width:350px) {
+//     .contactContainer {
+//         .form{
+//             .wrapper {
+//                 // input {
+//                 //         width: 320px;
+//                 //     }
+//             }
+//         }
+//     }
+// }
 
-                                /* mobile 320 */
+/* mobile 320 */
 @media (max-width:320px) {
     header {
         padding-top: 9px;
@@ -408,5 +562,42 @@
     .bottomFooter {
         padding: 0;
         text-align: center;
+    }
+}
+
+
+
+/* CONTACT PAGE QUERIES FOR 320PX */
+
+@media (max-width:320px) {
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+
+        .form {
+            width: 100%;
+
+            .wrapper {
+                padding-left: 0;
+
+                // input {
+                //     width: 300px;
+                // }
+            }
+        }
+
+        .info {
+            width: 100%;
+
+            .infoP {
+                width: 290px;
+            }
+        }
+    }
+}
+
+@media (max-width:320px) {
+    .backgroundFruit {
+        min-height: 32vh;
     }
 }

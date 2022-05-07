@@ -1,18 +1,74 @@
-header {
+.contactPic {
     background-image:url(../assets/contact-1.jpeg);
     min-height: 100vh;
 }   
 
-
 .contactContainer {
     display: flex;
+    input {
+            margin-bottom: 25px;
+        }
     .form {
         width: 60%;
-        .info {
-            width: 40%;
+        margin-top: 60px;
+        .wrapper {
+            padding-left: 200px;
+        }
+        .input {
+        width: 400px;
         }
     }
-    .infoP{
-        width: 400px;
+}
+
+
+.messageArrow {
+    display: flex;
+    i {
+        padding-top: 20px;
+        padding-left: 10px;
+        color: green;
     }
 }
+
+/* form input styles */
+
+input {
+    background-color: $white;
+    border: none;
+    padding-bottom: 20px;
+}
+    .input:first-of-type{
+        margin-right:20px ;
+    }
+
+.input2 {
+    padding-right: 400px;
+}
+.input3 {
+    padding-bottom: 180px;
+}
+
+
+.info {
+    width: 40%;
+    background-color: $white;
+    .infoP {
+        width: 400px;
+    }
+        .infoText {
+            margin-top: 85px;
+            padding-bottom: 50px;
+        }
+}
+.dates {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.backgroundFruit {
+    background-image: url(../assets/contact-2.jpeg);
+    background-position: center;
+    background-size: cover;
+    min-height: 70vh;
+}
+
