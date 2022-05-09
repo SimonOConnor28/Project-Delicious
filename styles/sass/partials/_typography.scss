@@ -17,16 +17,19 @@ h2 {
 h3 {
     text-transform: uppercase;
     font-size: 1.125rem;
+    font-family: $raleText;
 }
 
 h4 {
     text-transform: uppercase;
+    font-family: $raleText;
     
 }
 
 h5 {
     text-transform: uppercase;
     color: $white;
+    font-size: $raleText;
 }
 
 
@@ -40,7 +43,7 @@ li {
 
 
 p {
-    font-family: $loreText;
+    font-family: $loraText;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.3px;
@@ -50,24 +53,41 @@ p {
 
 .topFooter {
     p {
-        font-family: $loreText;
+        font-family: $loraText;
         font-size: 13px;
-        color: #2E2E2E;
-        border-bottom: 1px solid $brown;
+        border-bottom: 1px solid $grey;
         
     }
     h4 {
         font-family: $raleText;
         font-weight: bold;
         color: #66b032; 
-        font-size: 28px;
+        font-size: 35px;
+        margin-top: 30px;
+        margin-bottom: 20px;
     }
 }
 
 
-/* CONTACT PAGE STYLE */
+/*======= CONTACT PAGE STYLE ========= */
 .send {
     color: green;
     text-transform: uppercase;
     font-size: 18px;
+    font-family: $raleText;
+}
+
+
+
+
+
+
+
+
+/* ===== BLOG PAGE ======== */
+
+.blogTitles {
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.5px;
 }

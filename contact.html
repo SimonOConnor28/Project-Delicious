@@ -20,12 +20,12 @@
                 <!--START OF WRAPPER-->
                 <h1>Delicious</h1>
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Recipes</a></li>
+                    <li><a href="./blog.html">Recipes</a></li>
                     <li><a href="#">Nutrition</a></li>
                     <li><a href="#">Shop</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
                     <li class=><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
                 </ul><!-- STILL NEED TO ADD SHOP AND SEARCH SVG use font awesome-->
@@ -40,27 +40,28 @@
 
             <div class="form">
                 <div class="wrapper">
-
                     <h2>drop us a line</h2>
-                    <div>
-                    <label for="name"></label>
-                    <input type="text" name="name" placeholder="Your name" class="input">
-                        
-                    <label for="email"></label>
-                    <input for="email" name="email" placeholder="Your Email" class="input"></input>
-                    </div>
-                    <div>
-                        <label for="text"></label>
-                        <input type="text" name="subject" placeholder="Subject" class="input2">
-                    </div>
-
-                    <div>
-                        <label for="text"></label>
-                        <input type="text" name="text" placeholder="Message" class="input2 input3">
-                    </div>
-                    <div class="messageArrow">
-                        <p class="send">Send message</p><span><i class="fa-solid fa-right-long"></i></span>
-                    </div>
+                        <form action="">
+                            <div>
+                                <label for="name"></label>
+                                <input type="text" name="name" placeholder="Your Name" class="input">
+                            
+                                <label for="email"></label>
+                                <input for="email" name="email" placeholder="Your Email" class="input"></input>
+                            </div>
+                            <div>
+                                <label for="text"></label>
+                                <input type="text" name="subject" placeholder="Subject" class="input2">
+                            </div>
+                            
+                            <div>
+                                <label for="message"></label>
+                                <textarea name="message" id="message" placeholder="Message" cols="77" rows="10" class="input3"></textarea>
+                            </div>
+                            <div class="messageArrow">
+                                <p class="send">Send message</p><span><i class="fa-solid fa-right-long"></i></span>
+                            </div>
+                        </form>
                     
                 </div>
             </div>

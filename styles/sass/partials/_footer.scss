@@ -1,5 +1,9 @@
+/* styles for top info section of footer */
+
 .topFooter{
+    padding-top: 80px;
     background-color: $black;
+    padding-bottom: 90px;
     .wrapper{
         display: flex;
         flex-direction: row;
@@ -12,30 +16,50 @@
     }
     .fBox1 {
         width: 25%;
+        padding-right: 63px;
+        p {
+            color: $grey;
+            padding-bottom: 10px;
+            
+        }
     }
     .fBox2 {
-        width: 25%;
-        padding-top: 18px;
-    }
-    .fBox3 {
-        width: 25%;
+        width: 22%;
         padding-top: 18px;
         p {
+            color: $grey;
+            padding-bottom: 10px;
+        }
+    }
+    .fBox3 {
+        width: 33%;
+        padding-top: 18px;
+        padding-left: 20px;
+        p {
             border-bottom: none;
+            color: $grey;
         }
         div {
-            border-bottom: 1px solid;
+            border-bottom: 1px solid $grey;
             padding-bottom: 20px;
-            color: $brown;
-            
+            color: $white;
+            display: flex;
+            input {
+                background-color: $grey;
+                width: 300px;
+                border: none;
+            }
         }
     }
     .arrow {
         background-color: #66b032;
-        width: 30px;
-        padding: 10px 12px;
-        padding-bottom: 20px;
-        color: white;
+        padding-top: 10px;
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 30px;
+        color: $white;
+        
     }
 }
 

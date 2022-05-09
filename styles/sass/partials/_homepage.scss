@@ -19,7 +19,6 @@
 
 .menuContainer {
     display: flex;
-    background-color: $brown;
     .tacoImg, .menuText{
         flex-basis: 50%;
         width: 50%;
@@ -27,14 +26,22 @@
     .menuText{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
         color: $primary;
+        background-color: $grey;
+        letter-spacing: 0.1px;
+        li:nth-child(odd) {
+            padding-right: 20px;
+        }
     }
     ul {
         display: flex;
         justify-content: center;
         flex-direction: row;
         flex-wrap: wrap;
+        h3 {
+            margin: 0;
+        }
     }
 }
 
@@ -72,8 +79,8 @@
 
 
 .clients {
-    padding: 50px 0 200px 0;
-    background-color: #e8f48c;
+    padding: 50px 0 100px 0;
+    background-color: #FFFF99;
     h2 {
         text-align: center;
     }
@@ -81,9 +88,34 @@
         width: 59%;
         text-align: center;
         margin: 0 auto;
-        color: $brown;
+        color: $grey;
+        position: relative;
+        .left {
+            position: absolute;
+            font-size: 80px;
+            left: -90px;
+            top: 10px;
+            color: white;
+            font-family: $loraText;
+        }
         }
         p {
             padding-top: 40px;
+            .right {
+                    position: absolute;
+                    font-size: 80px;
+                    right: -96px;
+                    top: 78px;
+                    color: white;
+                }
         }
-}
+            .angles {
+                padding-top: 60px;
+                text-align: center;
+                font-size: 25px;
+                color: white;
+                span {
+                    opacity: .5;
+                }
+            }
+        }

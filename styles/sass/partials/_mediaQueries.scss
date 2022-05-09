@@ -1,7 +1,7 @@
 
 @media (max-width:940px) {
     header {
-        min-height: 56vh;
+        min-height: 50vh;
         ul {
             display: flex;
             flex-direction: column;
@@ -12,7 +12,12 @@
     }
 }
 
+
 @media (max-width:940px) {
+    .topFooter {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
     .fBox3 {
         i {
             padding-top: 11px;
@@ -23,6 +28,8 @@
         }
     }
 }
+
+
 
 
 /* ======== CONTACT PAGE QUERIES 940PX ========= */
@@ -61,14 +68,17 @@
 
         @media (max-width:900px) {
             header {
-                min-height: 56vh;
+                min-height: 45vh;
             }
         }
 
 
 /* Landscape phone to portrait tablet */
+
+/*===== homepage/index styles =======*/
 @media (max-width: 768px) {
     header {
+        min-height: 40vh;
         padding-top: 10px;
     }
         ul {
@@ -134,13 +144,39 @@
 }
 
 @media (max-width:768px) {
-    .fBox3 {
-        i {
-            padding-top: 11px;
+    .topFooter{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .wrapper{
+            display: flex;
+            flex-direction: column;
         }
-
-        ul {
-            flex-direction: row;
+        .fBox1 {
+            width: 75%;
+            margin: 0 auto;
+        }
+        .fBox2 {
+            width: 75%;
+            margin: 0 auto;
+            padding-right: 63px;
+        }
+        .fBox3 {
+            width: 75%;
+            margin: 0 auto;
+            padding-left: 0;
+            i {
+                padding-top: 11px;
+            }
+    
+            ul {
+                flex-direction: row;
+            }
+            .flexArrow {
+                span {
+                    display: flex;
+                    flex-wrap:wrap ;
+                }
+    }
         }
     }
 }
@@ -150,10 +186,6 @@
         text-align: center;
     }
 }
-
-
-
-
 
 
 
@@ -198,7 +230,51 @@
 }
 
 
+/*===== BLOG PAGE STYLES  =====*/
 
+@media (max-width:768px) {
+    .relatedContainer {
+        ul {
+            li {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+            .infoForm {
+                display: flex;
+                flex-direction: column;
+                input {
+                    width: 90%;
+                    margin-bottom: 10px;
+                }
+            }
+            .comment {
+                input {
+                    width: 90%;
+                }
+            }
+        }
+
+/* footer styles @700px */ 
+
+@media (max-width:700px) {
+    .topFooter {
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            div {
+                width: 100%;
+                .fBox1, .fBox2, .fBox3 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
 
 
 
