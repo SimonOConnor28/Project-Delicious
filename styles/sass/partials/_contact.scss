@@ -1,8 +1,15 @@
+/*==== HEADER STYLES =====*/
 .contactPic {
     background-image:url(../assets/contact-1.jpeg);
     min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }   
 
+
+/*===== FORM STYLES =====*/
 .contactContainer {
     display: flex;
     input {
@@ -14,6 +21,9 @@
     .form {
         width: 60%;
         margin-top: 60px;
+        .wrapper {
+            padding-left: 280px;
+        }
     .input {
         width: 45%;
         margin-right: 10px;
@@ -48,10 +58,13 @@
     }
 }
 
-
+/*===== SIDE SECTION WITH CONTACT INFO ====== */
 .info {
     width: 40%;
     background-color: $white;
+    p {
+        color: $grey;
+    }
     .infoP {
         width: 400px;
     }
@@ -61,10 +74,10 @@
         }
 }
 .dates {
-    font-weight: bold;
     text-transform: uppercase;
+    color: black;
+    font-family: $raleText;
 }
-
 .backgroundFruit {
     background-image: url(../assets/contact-2.jpeg);
     background-position: center;

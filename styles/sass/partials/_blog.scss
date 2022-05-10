@@ -1,14 +1,23 @@
+/*===== HEADER =====*/
 .blogPic {
     background-image: url(../assets/blog-1.jpeg);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-/* ======= main ======= */
+/* ======= FIRST SECTION  ======= */
 .pineapple {
+    padding-top: 100px;
+
     .wrapper {
+        padding-top: 10px;
         padding-bottom: 20px;
 
         h2 {
             margin-bottom: 0;
+            font-weight: bold;
         }
 
         p {
@@ -19,7 +28,7 @@
     }
 }
 
-/* font awesome icons */
+/*====== FONT AWESOME STYLES =====*/
 .tagSocials {
     border-top: 3px solid $white;
     border-bottom: 3px solid $white;
@@ -28,8 +37,9 @@
     span {
         color: #000;
         text-transform: uppercase;
-        font-family: $loraText;
+        font-family: $raleText;
         font-size: 16px;
+        font-weight: bold;
     }
 
     a {
@@ -38,7 +48,7 @@
     }
 }
 
-
+/*====== SALLY CONTAINER ======*/
 .sallyContainer {
     margin-top: 50px;
     margin-bottom: 40px;
@@ -48,20 +58,24 @@
         flex-direction: row;
         border-bottom: 3px solid $white;
         padding-bottom: 50px;
+
         .whiteShirt {
             width: 50%;
             padding-right: 50px;
         }
+
         .sallyText {
             background-color: $white;
             padding-left: 50px;
             padding-top: 30px;
 
         }
+
         .sally {
             font-size: 16px;
             font-family: $raleText;
         }
+
         p {
             color: $grey;
             line-height: 30px;
@@ -114,41 +128,37 @@
 }
 
 
-/*===== COMMENT SECTION ===== */
+/*===== COMMENT/TWO BLOGS SECTION ===== */
 
 .blog6 {
     .blog6Container {
         display: flex;
         padding-bottom: 30px;
+
         .blog6Img {
             padding-right: 20px;
         }
     }
-    p:first-child {
+
+    p {
+        color: $primary;
+    }
+
+    span {
         color: $primary;
         font-size: 16px;
         font-family: $raleText;
         font-weight: bold;
-        span {
-            font-family: $loraText;
-            font-size: 13px;
-        }
     }
 }
 
 .blog7Container {
     display: flex;
 
-    p:first-child {
+    span {
         color: $primary;
         font-size: 16px;
         font-family: $raleText;
-
-        span {
-            color: $primary;
-            font-size: 13px;
-            font-family: $loraText;
-        }
     }
 
     .blog7Img {
@@ -179,14 +189,20 @@
 }
 
 
+/*=== BLOG FORM STYLES =====*/
 .blogForm {
     margin-top: 70px;
-    padding-bottom: 30px;
-.marked {
+    padding-bottom: 120px;
+
+    .marked {
         color: $grey;
     }
+
     button {
         margin-top: 20px;
+        background-color: #66b032;
+        padding: 11px;
+        font-size: 16px;
     }
 }
 
@@ -194,20 +210,32 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 20px;
+
     input {
         width: calc((100% / 3) - 5px);
         margin-right: 10px;
         border: 2px solid $white;
-    }
-    input:nth-of-type(3) {
-        margin-right: 0; 
-    } 
-}
-.comment {
-    input{
-        width: 100%;
-        padding-bottom: 70px;
-        border: 2px solid $white;
+        font-family: $loraText;
+        font-size: 16px;
     }
 
+    input:nth-of-type(3) {
+        margin-right: 0;
+    }
+}
+
+.comment {
+    input {
+        width: 100%;
+        padding-bottom: 150px;
+        border: 2px solid $white;
+    }
+}
+
+
+/*==== FOOTER =====*/
+.fBox3 {
+    .now {
+        padding-bottom: 70px;
+    }
 }

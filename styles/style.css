@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* text fonts */
 /* color styles */
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Raleway:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Raleway&display=swap");
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -162,6 +162,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 h1 {
   font-family: "Raleway", sans-serif;
+  font-weight: bold;
   font-size: 46px;
   letter-spacing: 1.1px;
   text-transform: uppercase;
@@ -171,12 +172,14 @@ h1 {
 h2 {
   text-transform: uppercase;
   font-family: "Raleway", sans-serif;
+  letter-spacing: 1.1px;
 }
 
 h3 {
   text-transform: uppercase;
   font-size: 1.125rem;
   font-family: "Raleway", sans-serif;
+  letter-spacing: 1px;
 }
 
 h4 {
@@ -187,11 +190,13 @@ h4 {
 h5 {
   text-transform: uppercase;
   color: #F6F6F6;
-  font-size: "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 a {
   color: black;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
 }
 
 li {
@@ -203,7 +208,6 @@ p {
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.3px;
-  color: #2E2E2E;
 }
 
 .topFooter p {
@@ -241,8 +245,8 @@ html {
 }
 
 .wrapper {
-  max-width: 1400px;
-  width: 90%;
+  max-width: 1200px;
+  width: 95%;
   margin: 0 auto;
 }
 
@@ -273,12 +277,17 @@ hr {
 
 .widthFifty {
   width: 40%;
+  padding-bottom: 20px;
 }
 
 button {
-  padding: 10px;
+  padding: 15px;
+  font-weight: bold;
   background-color: yellowgreen;
   color: white;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
 }
 
 input {
@@ -289,7 +298,6 @@ input {
 header {
   background-image: url(../assets/home-1.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   min-height: 100vh;
 }
@@ -309,6 +317,13 @@ header ul {
   display: flex;
   padding-top: 20px;
 }
+header ul li {
+  padding-right: 5px;
+}
+header ul li a {
+  font-size: 22px;
+  font-weight: bold;
+}
 header a:hover {
   color: green;
   border: none;
@@ -317,6 +332,19 @@ header a:focus {
   color: green;
   border: none;
 }
+header .shopping {
+  position: relative;
+}
+header .shopping .two {
+  position: absolute;
+  top: -4px;
+  background-color: yellowgreen;
+  border-radius: 50%;
+  width: 18px;
+  left: 19px;
+  text-align: center;
+  color: white;
+}
 
 /* main here you will find content for all of the homepage styles */
 .popular {
@@ -324,7 +352,8 @@ header a:focus {
   display: -ms-flexbox;
   display: flex;
 }
-.popular .saladText, .popular .saladImg {
+.popular .saladText,
+.popular .saladImg {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   width: 50%;
@@ -344,14 +373,19 @@ header a:focus {
 }
 .popular p {
   padding-top: 20px;
+  width: 74%;
+  margin: 0 auto;
+  padding-bottom: 30px;
 }
 
+/*==== SALAD SECTION AND TACO SECTION/ MENU ======*/
 .menuContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-.menuContainer .tacoImg, .menuContainer .menuText {
+.menuContainer .tacoImg,
+.menuContainer .menuText {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   width: 50%;
@@ -365,7 +399,7 @@ header a:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   color: #2E2E2E;
-  background-color: #999999;
+  background-color: #F6F6F6;
   letter-spacing: 0.1px;
 }
 .menuContainer .menuText li:nth-child(odd) {
@@ -375,20 +409,115 @@ header a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 100px;
+  padding-left: 60PX;
+}
+.menuContainer ul p {
+  font-size: 14px;
+  color: #999999;
 }
 .menuContainer ul h3 {
   margin: 0;
 }
 
+/* FONT AWESOME STYLES */
+.icon {
+  position: relative;
+}
+
+.lemon:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f094";
+  position: absolute;
+  left: -40px;
+  font-size: 30px;
+}
+
+.utensils:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f2e7";
+  position: absolute;
+  left: -40px;
+  font-size: 30px;
+}
+
+.coffeeCup:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f0f4";
+  position: absolute;
+  left: -44px;
+  font-size: 30px;
+}
+
+.martini:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f57b";
+  position: absolute;
+  left: -44px;
+  font-size: 30px;
+}
+
+.leaf:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f06c";
+  position: absolute;
+  left: -44px;
+  font-size: 30px;
+}
+
+.spoon:before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f2e5";
+  position: absolute;
+  left: -44px;
+  font-size: 30px;
+}
+
+/*===== FANCY PIC =====*/
 .fancy {
   padding-top: 150px;
 }
@@ -404,14 +533,22 @@ header a:focus {
   right: -56px;
 }
 
+/*====== RESTUARANT ======*/
 .rest {
   text-align: center;
   padding-bottom: 150px;
 }
+.rest h2 {
+  margin-top: 35px;
+}
 .rest p {
-  padding: 10px 200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px 217px;
+  color: #999999;
 }
 
+/*===== SIX PICTURE GALLERY ====*/
 .gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -419,6 +556,7 @@ header a:focus {
   width: 100%;
 }
 
+/*==== HUNGRY CLIENTS SECTION AND FONT AWESOME=====*/
 .clients {
   padding: 50px 0 100px 0;
   background-color: #FFFF99;
@@ -427,15 +565,17 @@ header a:focus {
   text-align: center;
 }
 .clients .clientsText {
-  width: 59%;
+  width: 49%;
   text-align: center;
   margin: 0 auto;
-  color: #999999;
+  font-style: italic;
+  font-family: "Lora", serif;
   position: relative;
+  color: #2E2E2E;
 }
 .clients .clientsText .left {
   position: absolute;
-  font-size: 80px;
+  font-size: 70px;
   left: -90px;
   top: 10px;
   color: white;
@@ -446,7 +586,7 @@ header a:focus {
 }
 .clients p .right {
   position: absolute;
-  font-size: 80px;
+  font-size: 70px;
   right: -96px;
   top: 78px;
   color: white;
@@ -454,18 +594,23 @@ header a:focus {
 .clients .angles {
   padding-top: 60px;
   text-align: center;
-  font-size: 25px;
+  font-size: 30px;
   color: white;
 }
 .clients .angles span {
   opacity: 0.5;
 }
 
+/*==== HEADER STYLES =====*/
 .contactPic {
   background-image: url(../assets/contact-1.jpeg);
   min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
+/*===== FORM STYLES =====*/
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,6 +625,9 @@ header a:focus {
 .contactContainer .form {
   width: 60%;
   margin-top: 60px;
+}
+.contactContainer .form .wrapper {
+  padding-left: 280px;
 }
 .contactContainer .form .input {
   width: 45%;
@@ -514,9 +662,13 @@ header a:focus {
   color: green;
 }
 
+/*===== SIDE SECTION WITH CONTACT INFO ====== */
 .info {
   width: 40%;
   background-color: #F6F6F6;
+}
+.info p {
+  color: #999999;
 }
 .info .infoP {
   width: 400px;
@@ -527,8 +679,9 @@ header a:focus {
 }
 
 .dates {
-  font-weight: bold;
   text-transform: uppercase;
+  color: black;
+  font-family: "Raleway", sans-serif;
 }
 
 .backgroundFruit {
@@ -538,16 +691,26 @@ header a:focus {
   min-height: 70vh;
 }
 
+/*===== HEADER =====*/
 .blogPic {
   background-image: url(../assets/blog-1.jpeg);
+  min-height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-/* ======= main ======= */
+/* ======= FIRST SECTION  ======= */
+.pineapple {
+  padding-top: 100px;
+}
 .pineapple .wrapper {
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 .pineapple .wrapper h2 {
   margin-bottom: 0;
+  font-weight: bold;
 }
 .pineapple .wrapper p {
   margin-top: 2px;
@@ -555,7 +718,7 @@ header a:focus {
   color: #999999;
 }
 
-/* font awesome icons */
+/*====== FONT AWESOME STYLES =====*/
 .tagSocials {
   border-top: 3px solid #F6F6F6;
   border-bottom: 3px solid #F6F6F6;
@@ -564,14 +727,16 @@ header a:focus {
 .tagSocials span {
   color: #000;
   text-transform: uppercase;
-  font-family: "Lora", serif;
+  font-family: "Raleway", sans-serif;
   font-size: 16px;
+  font-weight: bold;
 }
 .tagSocials a {
   font-size: 18px;
   color: #999999;
 }
 
+/*====== SALLY CONTAINER ======*/
 .sallyContainer {
   margin-top: 50px;
   margin-bottom: 40px;
@@ -643,7 +808,7 @@ header a:focus {
   color: black;
 }
 
-/*===== COMMENT SECTION ===== */
+/*===== COMMENT/TWO BLOGS SECTION ===== */
 .blog6 .blog6Container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -653,15 +818,14 @@ header a:focus {
 .blog6 .blog6Container .blog6Img {
   padding-right: 20px;
 }
-.blog6 p:first-child {
+.blog6 p {
+  color: #2E2E2E;
+}
+.blog6 span {
   color: #2E2E2E;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-}
-.blog6 p:first-child span {
-  font-family: "Lora", serif;
-  font-size: 13px;
 }
 
 .blog7Container {
@@ -669,15 +833,10 @@ header a:focus {
   display: -ms-flexbox;
   display: flex;
 }
-.blog7Container p:first-child {
+.blog7Container span {
   color: #2E2E2E;
   font-size: 16px;
   font-family: "Raleway", sans-serif;
-}
-.blog7Container p:first-child span {
-  color: #2E2E2E;
-  font-size: 13px;
-  font-family: "Lora", serif;
 }
 .blog7Container .blog7Img {
   padding-right: 30px;
@@ -702,15 +861,19 @@ header a:focus {
   border-bottom: 15px solid transparent;
 }
 
+/*=== BLOG FORM STYLES =====*/
 .blogForm {
   margin-top: 70px;
-  padding-bottom: 30px;
+  padding-bottom: 120px;
 }
 .blogForm .marked {
   color: #999999;
 }
 .blogForm button {
   margin-top: 20px;
+  background-color: #66b032;
+  padding: 11px;
+  font-size: 16px;
 }
 
 .infoForm {
@@ -726,6 +889,8 @@ header a:focus {
   width: calc(33.3333333333% - 5px);
   margin-right: 10px;
   border: 2px solid #F6F6F6;
+  font-family: "Lora", serif;
+  font-size: 16px;
 }
 .infoForm input:nth-of-type(3) {
   margin-right: 0;
@@ -733,8 +898,13 @@ header a:focus {
 
 .comment input {
   width: 100%;
-  padding-bottom: 70px;
+  padding-bottom: 150px;
   border: 2px solid #F6F6F6;
+}
+
+/*==== FOOTER =====*/
+.fBox3 .now {
+  padding-bottom: 70px;
 }
 
 /* styles for top info section of footer */
@@ -757,33 +927,45 @@ header a:focus {
       flex-basis: 33.3333333333%;
 }
 .topFooter .wrapper p {
-  color: white;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
+  color: #999999;
 }
 .topFooter .fBox1 {
-  width: 25%;
+  width: 27%;
   padding-right: 63px;
 }
 .topFooter .fBox1 p {
-  color: #999999;
   padding-bottom: 10px;
+}
+.topFooter .fBox1 p:nth-of-type(2) {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.topFooter .fBox1 p:nth-of-type(3) {
+  margin-top: 0;
+  padding-top: 0;
+}
+.topFooter .fBox1 p:nth-of-type(5) {
+  border-bottom: none;
 }
 .topFooter .fBox2 {
   width: 22%;
   padding-top: 18px;
 }
 .topFooter .fBox2 p {
-  color: #999999;
   padding-bottom: 10px;
 }
+.topFooter .fBox2 p:nth-of-type(6) {
+  border-bottom: none;
+}
 .topFooter .fBox3 {
-  width: 33%;
+  width: 24%;
   padding-top: 18px;
   padding-left: 20px;
 }
 .topFooter .fBox3 p {
   border-bottom: none;
-  color: #999999;
 }
 .topFooter .fBox3 div {
   border-bottom: 1px solid #999999;
@@ -795,8 +977,11 @@ header a:focus {
 }
 .topFooter .fBox3 div input {
   background-color: #999999;
-  width: 300px;
+  width: 80%;
   border: none;
+  color: #F6F6F6;
+  font-size: 16px;
+  font-family: "Lora", serif;
 }
 .topFooter .arrow {
   background-color: #66b032;
@@ -813,11 +998,13 @@ header a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: white;
 }
 .socials li {
   padding-right: 20px;
   padding-top: 10px;
+}
+.socials li a {
+  color: white;
 }
 
 .bottomFooter {
@@ -827,13 +1014,30 @@ header a:focus {
 }
 .bottomFooter p {
   margin: 0;
-  color: white;
+  color: #999999;
+  padding-left: 20px;
 }
 .bottomFooter .polar {
   color: #66b032;
   text-transform: uppercase;
 }
 
+@media (max-width: 1044px) {
+  header ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header ul li {
+    padding-bottom: 20px;
+    padding-right: 100px;
+  }
+}
+/*=== HOMEPAGE STYLES 940PX ======*/
 @media (max-width: 940px) {
   header {
     min-height: 50vh;
@@ -891,13 +1095,48 @@ header a:focus {
     width: 290px;
   }
 }
-/* ===== HEADER 900PX ====== */
+/* ===== HOMEPAGE 900PX ====== */
 @media (max-width: 900px) {
   header {
     min-height: 45vh;
   }
 }
-/* Landscape phone to portrait tablet */
+@media (max-width: 900px) {
+  .popular {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .popular .saladImg {
+    width: 100%;
+  }
+  .popular .saladText {
+    width: 100%;
+  }
+  .popular .saladText .wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .menuContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  .menuContainer .tacoImg {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .menuContainer .menuText {
+    width: 100%;
+  }
+  .menuContainer .menuText .wrapper {
+    width: 100%;
+  }
+}
 /*===== homepage/index styles =======*/
 @media (max-width: 768px) {
   header {
@@ -1090,6 +1329,11 @@ header a:focus {
     width: 90%;
   }
 }
+@media (max-width: 768px) {
+  .fBox3 .now {
+    padding-bottom: 10px;
+  }
+}
 /* footer styles @700px */
 @media (max-width: 700px) {
   .topFooter .wrapper {
@@ -1104,11 +1348,18 @@ header a:focus {
   .topFooter .wrapper div {
     width: 100%;
   }
-  .topFooter .wrapper div .fBox1, .topFooter .wrapper div .fBox2, .topFooter .wrapper div .fBox3 {
+  .topFooter .wrapper div .fBox1,
+.topFooter .wrapper div .fBox2,
+.topFooter .wrapper div .fBox3 {
     width: 100%;
   }
 }
 /* HEADER STYLES */
+@media (max-width: 480px) {
+  .blogPic {
+    min-height: 60vh;
+  }
+}
 @media (max-width: 480px) {
   header {
     padding-top: 9px;
@@ -1287,7 +1538,6 @@ header a:focus {
     min-height: 50vh;
   }
 }
-/* ========= CONTACT PAGE  350PX======== */
 /* mobile 320 */
 @media (max-width: 320px) {
   header {

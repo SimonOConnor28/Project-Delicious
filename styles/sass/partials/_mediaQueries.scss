@@ -1,10 +1,27 @@
-
-@media (max-width:940px) {
+@media (max-width:1044px) {
     header {
-        min-height: 50vh;
         ul {
             display: flex;
             flex-direction: column;
+
+            li {
+                padding-bottom: 20px;
+                padding-right: 100px;
+            }
+        }
+    }
+    
+}
+
+/*=== HOMEPAGE STYLES 940PX ======*/
+@media (max-width:940px) {
+    header {
+        min-height: 50vh;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+
             li {
                 padding-bottom: 10px;
             }
@@ -18,6 +35,7 @@
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
     .fBox3 {
         i {
             padding-top: 11px;
@@ -36,44 +54,80 @@
 
 @media (max-width:940px) {
     .contactContainer {
-            display: flex;
-            flex-direction: column;
-    
-            .form {
-                width: 100%;
-    
-                .wrapper {
-                    padding-left: 0;
-    
-                    // input {
-                    //     width: 300px;
-                    // }
-                }
+        display: flex;
+        flex-direction: column;
+
+        .form {
+            width: 100%;
+
+            .wrapper {
+                padding-left: 0;
+
+                // input {
+                //     width: 300px;
+                // }
             }
-    
-            .info {
-                width: 100%;
-    
-                .infoP {
-                    width: 290px;
-                }
+        }
+
+        .info {
+            width: 100%;
+
+            .infoP {
+                width: 290px;
             }
         }
     }
+}
 
 
 
 
-    /* ===== HEADER 900PX ====== */ 
+/* ===== HOMEPAGE 900PX ====== */
 
-        @media (max-width:900px) {
-            header {
-                min-height: 45vh;
+@media (max-width:900px) {
+    header {
+        min-height: 45vh;
+    }
+} 
+
+@media (max-width:900px) {
+    .popular {
+        flex-direction: column-reverse;
+        .saladImg {
+                width: 100%;
             }
+        .saladText {
+                width: 100%;
+        
+                .wrapper {
+                    width: 100%;
+                    
+                }
+            }
+    }
+}
+
+@media (max-width:900px) {
+    .menuContainer {
+        flex-direction: column;
+        margin-top: 20px;
+
+        .tacoImg {
+            margin: 0 auto;
+            width: 100%;
         }
 
+        .menuText {
+            width: 100%;
 
-/* Landscape phone to portrait tablet */
+            .wrapper {
+                width: 100%;
+            }
+        }
+    }
+}
+
+
 
 /*===== homepage/index styles =======*/
 @media (max-width: 768px) {
@@ -81,20 +135,21 @@
         min-height: 40vh;
         padding-top: 10px;
     }
-        ul {
-            display: flex;
-            flex-direction: column;
-            padding: 0;
 
-            li {
-                padding-bottom: 10px;
-            }
-        }
+    ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
 
-        a {
-            padding-bottom: 20px;
+        li {
+            padding-bottom: 10px;
         }
     }
+
+    a {
+        padding-bottom: 20px;
+    }
+}
 
 
 @media (max-width:768px) {
@@ -144,39 +199,45 @@
 }
 
 @media (max-width:768px) {
-    .topFooter{
+    .topFooter {
         padding-top: 10px;
         padding-bottom: 10px;
-        .wrapper{
+
+        .wrapper {
             display: flex;
             flex-direction: column;
         }
+
         .fBox1 {
             width: 75%;
             margin: 0 auto;
         }
+
         .fBox2 {
             width: 75%;
             margin: 0 auto;
             padding-right: 63px;
         }
+
         .fBox3 {
             width: 75%;
             margin: 0 auto;
             padding-left: 0;
+
             i {
                 padding-top: 11px;
             }
-    
+
             ul {
                 flex-direction: row;
             }
+
             .flexArrow {
                 span {
                     display: flex;
-                    flex-wrap:wrap ;
+                    flex-wrap: wrap;
                 }
-    }
+            }
         }
     }
 }
@@ -194,32 +255,35 @@
 /* =========== CONTACT PAGE QUERIES  768px========= */
 @media (max-width:768px) {
     .contactContainer {
-            display: flex;
-            flex-direction: column;
-            .form {
-                width: 100%;
-                margin-top: 0;
-                .wrapper {
-                    padding-left: 0;
-                    text-align: center;
-                    // input {
-                    //     width: 450px;
-                    // }
-                    .input:first-of-type {
+        display: flex;
+        flex-direction: column;
+
+        .form {
+            width: 100%;
+            margin-top: 0;
+
+            .wrapper {
+                padding-left: 0;
+                text-align: center;
+
+                .input:first-of-type {
                     margin-right: 0;
-                    }
-                }
-            }
-            .info {
-                width: 100%;
-                .infoText {
-                    margin-top: 10px;
-                }
-                .infoP {
-                    width: 300px;
                 }
             }
         }
+
+        .info {
+            width: 100%;
+
+            .infoText {
+                margin-top: 10px;
+            }
+
+            .infoP {
+                width: 300px;
+            }
+        }
+    }
 }
 
 @media (max-width:768px) {
@@ -244,31 +308,46 @@
 
 @media (max-width:768px) {
 
-            .infoForm {
-                display: flex;
-                flex-direction: column;
-                input {
-                    width: 90%;
-                    margin-bottom: 10px;
-                }
-            }
-            .comment {
-                input {
-                    width: 90%;
-                }
-            }
-        }
+    .infoForm {
+        display: flex;
+        flex-direction: column;
 
-/* footer styles @700px */ 
+        input {
+            width: 90%;
+            margin-bottom: 10px;
+        }
+    }
+
+    .comment {
+        input {
+            width: 90%;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .fBox3 {
+
+        .now {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+/* footer styles @700px */
 
 @media (max-width:700px) {
     .topFooter {
         .wrapper {
             display: flex;
             flex-direction: column;
+
             div {
                 width: 100%;
-                .fBox1, .fBox2, .fBox3 {
+
+                .fBox1,
+                .fBox2,
+                .fBox3 {
                     width: 100%;
                 }
             }
@@ -281,6 +360,11 @@
 
 
 /* HEADER STYLES */
+@media (max-width:480px) {
+        .blogPic {
+            min-height: 60vh;
+        }
+}
 @media (max-width:480px) {
     header {
         padding-top: 9px;
@@ -471,22 +555,6 @@
     }
 }
 
-
-
-
-/* ========= CONTACT PAGE  350PX======== */
-
-// @media (max-width:350px) {
-//     .contactContainer {
-//         .form{
-//             .wrapper {
-//                 // input {
-//                 //         width: 320px;
-//                 //     }
-//             }
-//         }
-//     }
-// }
 
 /* mobile 320 */
 @media (max-width:320px) {
