@@ -3,16 +3,13 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 100vh;
-    
     .wrapper {
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
         max-width: 100%;
-    }
-    ul{
+    } ul{
         display: flex;
-        // justify-content: space-between;
         padding-top: 20px;
         li {
             padding-right: 5px;
@@ -44,3 +41,5 @@ header{
             }
     }
 }
+
+
